@@ -183,7 +183,12 @@ function card(x) {
 }
 
     document.addEventListener("DOMContentLoaded", function() {
-        tabs = JSON.parse(localStorage.getItem("tabs"));
+        if (localStorage.getItem("tabs") == undefined) {
+            localStorage.setItem("tabs","First time?");
+        } else {
+            tabs = JSON.parse(localStorage.getItem("tabs"));
+        }
+        
         updateTabsContainer();
     });
     
