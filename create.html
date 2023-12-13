@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://d1verlin.github.io/My-Css-Styles/Fonts/GeometriaFont.css">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>    
+</head>
+<body>
+    <div class="center">
+<header>
+    <div class="top">
+    <nav>
+    <span class="iconify" data-icon="mdi:file-document-check-outline"></span>
+    <h1>BH | Create</h1></nav>
+    <a href="view.html"><span class="iconify" data-icon="mdi:database-eye"></span></a></div>
+    <div class="bar">
+        <form id="tabForm">
+            <nav>
+            <label for="tabName"></label>
+            <input type="text" id="tabName" required placeholder="Name">
+            
+            <label for="tabLink"></label>
+            <input type="url" id="tabLink" required placeholder="Link">
+            
+            </nav>
+            <nav style="flex-direction: row;">
+            <button type="button" onclick="addTab()"><span class="iconify" data-icon="material-symbols:add-circle-outline-rounded"></span></button>
+            <button type="button" onclick="saveToFile()"><span class="iconify" data-icon="lucide:file-json-2"></span></button>          
+            <label class="input-file">
+                <input type="file" id="fileInput" accept=".json" onchange="loadFromFile()">
+                <span class="iconify" data-icon="mingcute:file-import-line"></span>
+          </label> 
+          <button type="button" onclick="Clear()"><span class="iconify" data-icon="icon-park-outline:clear-format"></span></button>               
+        </nav>
+        </form> 
+    </div>
+</header>
+
+<main>
+<div id="list">
+    <nav id="group">
+    </nav>
+</div>
+</main>
+</div>
+
+<!--
+<h2>Управление вкладками</h2>
+
+<form id="tabForm">
+    <label for="tabName">Имя вкладки:</label>
+    <input type="text" id="tabName" required>
+    
+    <label for="tabLink">Ссылка на вкладку:</label>
+    <input type="url" id="tabLink" required>
+    
+    <button type="button" onclick="addTab()">Добавить вкладку</button>
+</form>
+
+<button type="button" onclick="exportTabs()">Экспорт в JSON</button>
+<button type="button" onclick="importTabs()">Импорт из JSON</button>
+
+
+<div id="tabsContainer"></div>
+-->
+<script src="index.js"></script>
+</body>
+</html>

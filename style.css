@@ -1,0 +1,411 @@
+    /* width */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: var(--bg-secondry);
+        border-radius: 46px;
+    }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #9B9FFF;
+    }
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: var(--bg);
+    }
+
+:root {
+    --bg:#151515;
+    --bg-secondry:#242424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Geometria',sans-serif;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.center {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+}
+
+header a svg {
+    border: 2px solid #9D95FF;
+    background: #1a192b;
+    transition: 0.3s;
+    width: 26px;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+    color: #9D95FF;
+
+}
+
+header a svg:hover {
+    color: #1a192b;
+    background: #9D95FF;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: Geometria;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+header nav:first-child svg {
+    width: 26px;
+    height: auto;
+    color: #9D95FF;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+footer {
+    height: 80%;
+    width: auto;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+.top {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#tabName,#tabLink {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #1F1F1F;
+    width: auto;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;    
+}
+
+#tabForm {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#tabForm button {
+    border-radius: 13px;
+    width: 50px;
+    height: 50px;
+}
+
+#tabForm button:nth-child(1) {
+    border: 2px solid #89FFAA;
+    background: #263327;
+    transition: 0.3s;
+}
+
+#tabForm button:nth-child(1):hover {
+    background-color: #89FFAA;
+    cursor: pointer;
+}
+
+#tabForm button:nth-child(2) {
+    border: 2px solid #9B9FFF;
+    background: #26263A;
+    transition: 0.3s;
+}
+
+#tabForm button:nth-child(2):hover {
+    background-color: #9B9FFF;
+    cursor: pointer;
+}
+
+#tabForm button:nth-child(2):hover svg {
+    color: #26263A;
+}
+
+#tabForm button:nth-child(1) svg {
+    color: #89FFAA;
+    transition: 0.3s;
+}
+
+#tabForm button:nth-child(1):hover svg {
+    color: #26263A;
+}
+
+#tabForm button:nth-child(2) svg {
+    color: #9B9FFF;
+    transition: 0.3s;
+}
+
+#tabForm button:nth-child(4) {
+    border: 2px solid #9bdaff;
+    background: #26263A;
+    transition: 0.3s;
+}
+
+#tabForm button:nth-child(4) svg {
+    color: #9bdaff;
+    transition: 0.3s;
+}
+
+#tabForm button:nth-child(4):hover {
+    background-color: #9bdaff;
+    cursor: pointer;
+}
+
+#tabForm button:nth-child(4):hover svg {
+    color: #26263A;
+}
+
+#tabForm button svg {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+#tabForm nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#card {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #2e2e2e38;
+    box-sizing: border-box;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:15px;
+}
+
+#card nav:nth-child(1) {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    word-break: break-word;
+}
+
+#card nav:nth-child(1) h2 {
+    color: #FFF;
+    font-family: Geometria;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow-wrap: break-word;
+}
+
+#card nav:nth-child(1) p {
+    color: #D1D1D1;
+    font-family: Geometria;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+}
+
+nav#btns {
+    display: flex !important; 
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+}
+
+nav#btns button, nav#btns a {
+    border-radius: 6px;
+    background: transparent;
+    display: flex;
+    border: 3px solid #89FFAA;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px 15px 10px 15px;
+    align-items: center;
+    color: #89FFAA;
+    transition: 0.3s;
+}
+
+nav#btns button:hover, nav#btns a:hover {
+    background-color: #89FFAA;
+    cursor: pointer;
+    color: #2e2e2e;
+}
+
+nav#btns button svg,nav#btns a svg {
+    width: 16px;height: 16px;
+}
+
+#list h1 {
+    color: #FFF;
+    font-family: Geometria;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+#list nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.input-file {
+    border: 2px solid #fff;
+    background: #2c2c2c;
+    transition: 0.3s;
+    border-radius: 13px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    box-sizing: border-box; 
+}
+
+.input-file svg {
+    color: #fff;
+    transition: 0.3s;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.input-file:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.input-file:hover svg {
+    color: #2c2c2c;
+}
+
+.card-import {
+    transition: 0.3s;
+}
+
+.card-import label:hover {
+    cursor: pointer;
+    border-style:solid;
+}
+
+.card-import label {
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    align-items: center;
+    padding: 15px;
+    border: 2px dashed #fff;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card-import label svg {
+    color: #fff;
+    font-size: 24px;
+}
+
+.card-import label h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.card-import label input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+.card-import label input[type=file]:focus + span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/active */
+.card-import label:hover span {
+	background-color: #9748a7;
+}
+.card-import label:active span {
+	background-color: #2E703A;
+}
+ 
+/* Disabled */
+.card-import label input[type=file]:disabled + span {
+	background-color: #eee;
+}

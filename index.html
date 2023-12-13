@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks Hub</title>
+    <link rel="stylesheet" type="text/css" href="https://d1verlin.github.io/My-Css-Styles/Fonts/GeometriaFont.css">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <style>
+        * {
+            border: 0;font-family: 'Geometria',sans-serif;
+        }
+        body {
+            background: #151515;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        h1 {
+            color: #FFF;
+            font-family: Geometria;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+        }
+        svg.iconify.iconify--mdi {
+            width: 106px;
+            height: 106px;
+            flex-shrink: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: #202020;
+            box-shadow: -2px 9px 6.5px 4px rgba(47, 47, 47, 0.25);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            padding: 15px;
+        }         
+        a:nth-child(1) svg {
+            color: #9D95FF;
+        }
+        a:nth-child(2) svg {
+            color: #DD7BFF;
+        }
+        a h2 {
+            color: #FFF;
+            font-family: Geometria;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .container nav {
+            display: flex;
+            flex-direction: row;
+            min-width: 23%;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bookmarks Hub</h1>
+        <nav>
+        <a href="create.html" class="btn"><span class="iconify" data-icon="mdi:file-document-check-outline"></span><h2>Create</h2></a>
+        <a href="#" class="btn"><span class="iconify" data-icon="mdi:database-eye"></span><h2>View</h2></a></nav>
+    </div>
+</body>
+</html>
